@@ -7,7 +7,6 @@ import {
   InputGroup,
   ListGroup,
 } from 'react-bootstrap';
-import { useAppDispatch, useAppSelector } from '../../store';
 import { Navigate } from 'react-router-dom';
 import ContactPreview from '../../components/contact-preview/contact-preview.component';
 import Contact, {
@@ -15,6 +14,7 @@ import Contact, {
 } from '../../components/contact/contact.component';
 import { getContacts } from '../../controllers/contacts';
 import ROUTES from '../../routes';
+import { useAppDispatch, useAppSelector } from '../../store';
 import { signOut } from '../../store/slices/userSlice';
 import './contacts.page.css';
 
@@ -27,7 +27,7 @@ const ContactsPage = () => {
   const [searchText, setSearchText] = useState<string>('');
   useEffect(() => {
     dispatch(getContacts());
-  }, []);
+  }, [dispatch]);
   return accessToken !== null ? (
     <div>
       <Contact
