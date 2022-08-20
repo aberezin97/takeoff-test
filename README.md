@@ -1,6 +1,6 @@
 # Takeoff Test
 
-Simple Address Book
+Simple Contact Book
 
 ## Available Scripts
 
