@@ -1,0 +1,9 @@
+.contact-preview {
+  display: flex;
+}
+
+.contact-preview > div {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}

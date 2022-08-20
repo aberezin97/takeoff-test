@@ -1,0 +1,12 @@
+diff --git a/node_modules/json-server-auth/dist/guards.js b/node_modules/json-server-auth/dist/guards.js
+index ef718a8..2148258 100644
+--- a/node_modules/json-server-auth/dist/guards.js
++++ b/node_modules/json-server-auth/dist/guards.js
+@@ -107,6 +107,7 @@ const privateOnly = (req, res, next) => {
+                 hasRightUserId = entities.some((entity) => String(entity.userId) === req.claims.sub);
+             }
+             if (hasRightUserId) {
++                req.query.userId = req.claims.sub;
+                 next();
+             }
+             else {

@@ -1,0 +1,13 @@
+.controls button {
+  border-bottom-left-radius: 0;
+}
+
+.controls input {
+  border-bottom-right-radius: 0;
+}
+
+.contacts .list-group-item:first-child {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

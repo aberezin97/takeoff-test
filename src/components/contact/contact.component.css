@@ -1,0 +1,8 @@
+.image-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.data-container {
+  flex: 1;
+}

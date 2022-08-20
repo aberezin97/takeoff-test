@@ -1,0 +1,7 @@
+.image {
+  display: inline-block;
+  border-radius: 100%;
+  background-position: center center;
+  background-color: #eeeeee;
+  background-size: cover;
+}
